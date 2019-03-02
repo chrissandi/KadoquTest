@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/index', 'PagesController@index');
+
+Route::get('/about', 'PagesController@about');
+
+Route::get('/items', 'PagesController@items');
+
+Route::get('/profile/{id}/{name}', function($id, $name) {
+    return 'This is user ' .$name. ' with an id ' .$id;
+});
