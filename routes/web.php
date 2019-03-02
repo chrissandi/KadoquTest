@@ -21,6 +21,13 @@ Route::get('/about', 'PagesController@about');
 
 Route::get('/items', 'PagesController@items');
 
+Route::get('/cart', 'PagesController@cart');
+
+Route::get('/login', 'PagesController@login');
+
+Route::get('/signup', 'PagesController@signup');
+
+
 Route::get('/profile/{id}/{name}', function($id, $name) {
     return 'This is user ' .$name. ' with an id ' .$id;
 });
