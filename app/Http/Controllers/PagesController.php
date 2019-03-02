@@ -28,4 +28,8 @@ class PagesController extends Controller
     public function cart(){
         return view('pages.cart');
     }
+
+    public function login(){
+        return view('pages.login');
+    }
 }
