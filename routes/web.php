@@ -19,13 +19,13 @@ Route::get('/index', 'PagesController@index');
 
 Route::get('/about', 'PagesController@about');
 
-Route::get('/items', 'PagesController@items');
-
 Route::get('/cart', 'PagesController@cart');
 
 Route::get('/login', 'PagesController@login');
 
 Route::get('/signup', 'PagesController@signup');
+
+Route::resource('/items', 'ItemsController');
 
 
 Route::get('/profile/{id}/{name}', function($id, $name) {
