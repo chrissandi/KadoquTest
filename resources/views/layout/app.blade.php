@@ -8,7 +8,8 @@
     </head>
     <body>
         @include('inc.nav')
-        <div class="containter">
+        <div class="container">
+            @include('inc.message')
             @yield('content')
         </div>
     </body>
