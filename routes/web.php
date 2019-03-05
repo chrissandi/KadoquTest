@@ -31,3 +31,6 @@ Route::resource('/items', 'ItemsController');
 Route::get('/profile/{id}/{name}', function($id, $name) {
     return 'This is user ' .$name. ' with an id ' .$id;
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
